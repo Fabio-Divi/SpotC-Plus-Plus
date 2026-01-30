@@ -977,3 +977,9 @@ jobs:
       with:
         name: UpdatedScarletRepo
         path: ScarletRepo.json
+    - name: Salva IPA su GitHub (Artifact)
+      uses: actions/upload-artifact@v4
+      if: always()
+      with:
+        name: SpotifyModificato
+        path: Build Components/*.ipa
